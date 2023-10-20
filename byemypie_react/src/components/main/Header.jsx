@@ -2,11 +2,6 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { HeaderWrap } from '../../styled/HomeStyle';
 
-{/* header, menu
-    오른쪽 menu, kakao
-    fixed처리!!! */}
-
-
 const Header = () => {
     return (
         <HeaderWrap>
@@ -14,7 +9,7 @@ const Header = () => {
                 <h1><img src="https://en.byemypie.kr/web/upload/category/editor/2022/07/22/f64163cbbedc6747890be7cb3c6cd18b.png" alt="" /></h1>
                 <nav className='gnb'>
                     <ul>
-                        <li><Link to='/'>phone case</Link></li>
+                        <li><Link to='/products'>phone case</Link></li>
                         <li>
                             <Link to="/">finger tok</Link>
                         </li>
@@ -53,6 +48,7 @@ const Header = () => {
                     <Link to="/">KR / ENG</Link>
                 </li>
             </ul>
+            {/* <div className='headerHeight'></div> */}
         </HeaderWrap>
     );
 };

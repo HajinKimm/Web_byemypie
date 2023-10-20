@@ -16,6 +16,7 @@ const GlobalStyle = createGlobalStyle`
   }
   li{
     list-style: none;
+    display: block;
   }
 `
 export default GlobalStyle;

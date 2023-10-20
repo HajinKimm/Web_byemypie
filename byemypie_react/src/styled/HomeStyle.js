@@ -55,8 +55,116 @@ width: 100%;
             }
         }
     }
+    /* .headerHeight{
+        width: 100%;
+        height: 170px;
+    } */
 `
 
 export const FooterWrap = styled.header`
 
+`
+
+export const VisualWrap = styled.section`
+position: relative;
+.btn{
+    /* position: absolute; */
+    /* top: 50%; */
+    /* transform: translateY(-50%); */
+    /* top: 500px; */
+    /* left: 20px; */
+    height: 1080px;
+    box-sizing: border-box;
+    padding-top: 515px;
+    padding-left: 50px;
+    span{
+        cursor: pointer;
+        display: block;
+        color: #bbb;
+        font-weight: 700;
+        font-size: 10px;
+        margin-bottom: 10px;
+        &.on{
+            color: ${colorNavy};
+        }
+        &:hover{
+            color: ${colorNavy};
+        }
+    }
+}
+.visual{
+    z-index: -10;
+    position: absolute;
+    top: 0px;
+    /* left: -100px; */
+    img{
+        transition: 0.8s;
+        opacity: 0;
+        &.on{
+            opacity: 1;
+        }
+    }
+}
+`
+
+export const MainProductsWrap = styled.section`
+    .inner{
+        box-sizing: border-box;
+        padding: 0px 360px;
+        margin: auto;
+        display: flex;
+        flex-wrap: wrap;
+        /* justify-content: space-around; */
+        width: 100%;
+        .mainItem{
+            .mainImg{
+                width: 586px;
+                img{
+                    width: 586px;
+                }
+            }
+            .text{
+                text-align: center;
+                font-size: 11px;
+                letter-spacing: 2px;
+                a{
+                    h4{
+                    font-size: 12px;
+                    font-weight: 700;
+                        margin-bottom: 10px;
+                    }
+                }
+                span{
+                    text-transform: uppercase;
+                    color: #555;
+                    display: block;
+                }
+                strong{
+                    text-transform: uppercase;
+                    color: #333;
+                    display: block;
+                    &.line{
+                        color: #999;
+                        text-decoration: line-through;
+                    }
+                }
+                i{
+                    &.issue{
+                        display: inline-block;
+                        font-size: 10px;
+                        font-weight: 500;
+                        background: ${colorBlue};
+                        padding: 2px 5px;
+                        color: #fff;
+                        border-radius: 2px;
+                        margin-top: 3px;
+                        &.issueNew{
+                            background: ${colorGray};
+                        }
+                    }
+                }
+            }
+
+        }
+    }
 `
