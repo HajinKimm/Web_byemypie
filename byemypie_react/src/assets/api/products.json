@@ -1,6 +1,6 @@
 [
     {
-        "id":1, "title":"freddy", "price":17000, "sale":0, "issue":"NEW", "category":"hard jelly case",
+        "id":1, "title":"freddy", "price":17000, "sale":0, "issue":"NEW", "category":"hard jelly case", "menuType":"case",
         "mainImg":"https://byemypie.kr/web/product/big/202309/7b6366f6e2c8b8e2ae9abca2a55da776.jpg",
         "descImg":
             ["https://byemypie.kr/web/upload/NNEditor/20230924/f634206b93db22abcd95dd20f48b5a72.jpg",
@@ -8,7 +8,7 @@
             "https://byemypie.kr/web/upload/NNEditor/20230924/92a86d6159064554049427e443e500dc.jpg"]
     },
     {
-        "id":2, "title":"freddy tok", "price":16000, "sale":0, "issue":"NEW", "category":"clear acrylc tok",
+        "id":2, "title":"freddy tok", "price":16000, "sale":0, "issue":"NEW", "category":"clear acrylc tok","menuType":"tok",
         "mainImg":" https://byemypie.kr/web/product/big/202308/fafbb10bf6566a4b4b7689f1bb188f4e.jpg",
         "descImg":
             ["https://byemypie.kr/web/upload/NNEditor/20230824/32994c22397af8f74a0e713a3d238a59.jpg",
@@ -16,7 +16,7 @@
             "https://byemypie.kr/web/upload/NNEditor/20231010/3ac8b0aa154d267447e35d5f46335879.jpg"]
     },
     {
-        "id":3, "title":"pink apple tok", "price":16000, "sale":0, "issue":"NEW", "category":"clear acrylc tok",
+        "id":3, "title":"pink apple tok", "price":16000, "sale":0, "issue":"NEW", "category":"clear acrylc tok","menuType":"tok",
         "mainImg":"https://byemypie.kr/web/product/big/202308/2a31ea30dbc77aae54e3e48f591e9ea1.jpg",
         "descImg":
             ["https://byemypie.kr/web/upload/NNEditor/20230901/8e1e084cc075fe55490dd50e4f266849.jpg",
@@ -26,7 +26,7 @@
             "https://byemypie.kr/web/upload/NNEditor/20230826/fffef64a0389351964c458f9f1731f24.jpg"]
     },
     {
-        "id":4, "title":"패딩 케이스 - friends", "price":25000, "sale":22000, "issue":"BEST", "category":"jelly case",
+        "id":4, "title":"패딩 케이스 - friends", "price":25000, "sale":22000, "issue":"BEST", "category":"jelly case","menuType":"case",
         "mainImg":"https://byemypie.kr/web/product/big/202310/d1fb4d63b9535bb0c6370faac21fda7d.jpg",
         "descImg":
             ["https://byemypie.kr/web/upload/NNEditor/20230825/8bbb400aefc0f75b8ee7542747ab6770.jpg",
@@ -34,7 +34,7 @@
             "https://byemypie.kr/web/upload/NNEditor/20230821/091a388abef42f142959b080217f1764.jpg"]
     },
     {
-        "id":5, "title":"패딩 케이스 - friends", "price":25000, "sale":0, "issue":"", "category":"jelly case",
+        "id":5, "title":"패딩 케이스 - friends", "price":25000, "sale":8000, "issue":"", "category":"jelly case","menuType":"case",
         "mainImg":"https://byemypie.kr/web/product/big/202310/d1fb4d63b9535bb0c6370faac21fda7d.jpg",
         "descImg":
             ["https://byemypie.kr/web/upload/NNEditor/20230825/8bbb400aefc0f75b8ee7542747ab6770.jpg",

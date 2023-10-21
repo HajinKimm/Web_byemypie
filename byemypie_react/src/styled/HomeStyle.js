@@ -6,6 +6,7 @@ export const colorGray ='#B6B2AE'
 export const HeaderWrap = styled.header`
 width: 100%;
 .topMenu{
+    z-index: 100;
     position: fixed;
     width: 100%;
     height: 170px;
@@ -42,6 +43,7 @@ width: 100%;
     }
 }
     .rightMenu{
+        z-index: 100;
         position: fixed;
         top: 50%;
         transform: translateY(-50%);
@@ -62,17 +64,39 @@ width: 100%;
 `
 
 export const FooterWrap = styled.header`
-
+   .inner{
+    height: 240px;
+        padding: 100px 0px 0px 14px;
+        display: flex;
+        font-size: 12px;
+        box-sizing: border-box;
+        div{
+            &:nth-child(1){
+                margin-right: 90px;
+                font-size: 16px;
+                font-weight: 600;
+            }
+            &:nth-child(2){
+                margin-right: 150px;
+            }
+            &:nth-child(3){
+                margin-right: 815px;
+            }
+            &:nth-child(4){
+                p{
+                    margin-bottom: 25px;
+                }
+            }
+        }
+        .mb20{
+            margin-bottom: 20px;
+        }
+   } 
 `
 
 export const VisualWrap = styled.section`
 position: relative;
 .btn{
-    /* position: absolute; */
-    /* top: 50%; */
-    /* transform: translateY(-50%); */
-    /* top: 500px; */
-    /* left: 20px; */
     height: 1080px;
     box-sizing: border-box;
     padding-top: 515px;
@@ -96,8 +120,11 @@ position: relative;
     z-index: -10;
     position: absolute;
     top: 0px;
+    left: 0;
     /* left: -100px; */
+    /* width: 100%; */
     img{
+        width: 100%;
         transition: 0.8s;
         opacity: 0;
         &.on{
@@ -114,7 +141,6 @@ export const MainProductsWrap = styled.section`
         margin: auto;
         display: flex;
         flex-wrap: wrap;
-        /* justify-content: space-around; */
         width: 100%;
         .mainItem{
             .mainImg{
@@ -166,5 +192,14 @@ export const MainProductsWrap = styled.section`
             }
 
         }
+        //not main
+    }
+    h2{
+        margin-top: 200px;
+        text-align: center;
+        color: ${colorNavy};
+        font-size: 20px;
+        font-weight: 600;
+        letter-spacing: 1px;
     }
 `

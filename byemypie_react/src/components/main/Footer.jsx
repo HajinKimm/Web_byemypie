@@ -4,14 +4,14 @@ import { FooterWrap } from '../../styled/HomeStyle';
 const Footer = () => {
     return (
         <FooterWrap>
-            <div className='kr'>
+            <div className='kr inner'>
                 <div><strong>byemypie</strong></div>
                 <div>
-                    <p>대표자 : 김자영</p>
+                    <p className='mb20'>대표자 : 김자영</p>
                     <p>03979<br/>1층 서울 마포구 성미산로29길 35-14<br/>Business Number : 2580101319<br/>Permit Number : 2022-서울마포-2553</p>
                 </div>
                 <div>
-                    <p>01083812820<br/>발신전용번호, 콜센터X<br/>불량접수 카카오 채널톡 접수</p>
+                    <p className='mb20'>01083812820<br/>발신전용번호, 콜센터X<br/>불량접수 카카오 채널톡 접수</p>
                     <p>기업은행 682-009717-01-019<br/>Mon - Sun 11 - 6pm </p>
                 </div>
                 <div>
@@ -20,7 +20,7 @@ const Footer = () => {
                     <p>Copyright © byemypie. All rights reserved.</p>
                 </div>
             </div>
-            {/* <div className="eng">
+            {/* <div className="eng inner">
                 <div><strong>byemypie</strong></div>
                 <div>
                     <p className='mb'>Ceo : Kim Jayeong</p>
