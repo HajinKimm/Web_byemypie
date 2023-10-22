@@ -17,7 +17,7 @@ export const ProductSlice = createSlice({
   name: 'products',
   initialState,
   reducers: {
-    onMenufilter:(state, action)=>{
+    onMenufilter:(state, action)=>{ //카테고리에 맞는 상품데이터 출력
         // console.log(action.payload)
         state.menufilter = state.productList.filter(i=>i.menuType.includes(action.payload))
         // console.log(state.menufilter)
@@ -31,14 +31,16 @@ export const ProductSlice = createSlice({
         }
         // console.log(state.productTitle)
     },
-    onSortProduct:(state, action)=>{
+    onSortProduct:(state, action)=>{ //데이터순서 정렬 (낮은가격, 높은가격 등)
         // console.log(action.payload)
-        // switch(action.payload){
-        //     case 'New Item' : state.menufilter.sort((a,b)=>a.id-b.id); break;
-        //     case 'Lowest Price' : state.menufilter.filter(i=>i.sale===0?i.price:i.sale).sort((a,b)=>a-b); break;
-        //     case 'Highest Price' : state.menufilter.sort((a,b)=>b.sale===0?b.price-a.price:b.sale-a.price); break;
-        // }
-        console.log(state.menufilter.filter(i=>i.sale===0?i.price:i.sale))
+        state.sort = state.sort.map(i=>i.eTitle===action.payload?{...i, isOn:true}:{...i, isOn:false})
+        switch(action.payload){
+            case 'New Item' : state.menufilter.sort((a,b)=>a.id-b.id); break;
+            case 'Lowest Price' : state.menufilter.sort((a, b) =>a.sale===0?(b.sale===0?a.price - b.price:a.price - b.sale):(b.sale === 0?a.sale - b.price:a.sale - b.sale));break;
+            case 'Highest Price' : state.menufilter.sort((a, b) =>a.sale===0?(b.sale===0?b.price - a.price:b.sale-a.price):(b.sale === 0?b.price-a.sale:b.sale - a.sale));break;
+            case 'Product Review' : state.menufilter.sort((a,b)=>b.review-a.review);break;
+            default : state.menufilter;
+        }
     }
   }
 })

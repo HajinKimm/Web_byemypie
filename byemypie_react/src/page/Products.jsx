@@ -13,26 +13,26 @@ const Products = () => {
         <MainProductsWrap>
             <h2>{productTitle}</h2>
             <div className='productsMenu'>
-                <span>등록제품 {menufilter.length}개</span>
+                <span>등록제품 <b className='textBord'>{menufilter.length}</b>개</span>
                 <ul className='sortList'>
                     {
                         sort.map(i=>
-                            <li key={i.id} onClick={()=>dispatch(onSortProduct(i.eTitle))}>{i.title}</li>
+                            <li key={i.id} onClick={()=>dispatch(onSortProduct(i.eTitle))} className={i.isOn?'textBord':''}>{i.title}</li>
                         )
                     }
                 </ul>
             </div>
-            <div className="inner ">
+            <div className="inner productsInner">
                 {
                     menufilter.map(i =>
                         <div key={i.id} className='mainItem'>
-                            <Link to={`/products/${i.id}`}>
-                                <div className='mainImg'>
-                                    <img src={i.mainImg} alt="" />
+                            <Link to={`/category/products/${i.id}`}>
+                                <div className='productsImg'>
+                                    <img src={i.mainImg} alt={i.title} />
                                 </div>
                             </Link>
                             <div className="text">
-                                <Link to={`/products/${i.id}`}>
+                                <Link to={`/category/products/${i.id}`}>
                                     <h4>{i.title}</h4>
                                 </Link>
                                 <span>{i.category}</span>

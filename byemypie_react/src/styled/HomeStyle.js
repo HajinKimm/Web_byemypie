@@ -135,6 +135,7 @@ position: relative;
 `
 
 export const MainProductsWrap = styled.section`
+    //main page
     .inner{
         box-sizing: border-box;
         padding: 0px 360px;
@@ -192,8 +193,8 @@ export const MainProductsWrap = styled.section`
             }
 
         }
-        //not main
     }
+    //not main page // products page
     h2{
         margin-top: 200px;
         text-align: center;
@@ -201,5 +202,34 @@ export const MainProductsWrap = styled.section`
         font-size: 20px;
         font-weight: 600;
         letter-spacing: 1px;
+    }
+    .productsMenu{
+        padding: 30px 145px 30px;
+        color: #aaa;
+        font-size: 12px;
+        display: flex;
+        justify-content: space-between;
+        .sortList{
+            display: flex;
+            li{
+                margin-left: 20px;
+                cursor: pointer;
+            }
+        }
+        .textBord{
+            color: #999;
+            font-weight: 600;
+        }
+    }
+    .productsInner{
+        padding: 0px 145px;
+        .mainItem{
+            .productsImg{
+                width: 525px;
+                img{
+                    width: 525px;
+                }
+            }
+        }
     }
 `

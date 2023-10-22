@@ -19,13 +19,13 @@ const MainProducts = () => {
                 {
                     productList.map(i =>
                         <div key={i.id} className='mainItem'>
-                            <Link to={`/products/${i.id}`}>
+                            <Link to={`/category/products/${i.id}`}>
                                 <div className='mainImg'>
                                     <img src={i.mainImg} alt="" />
                                 </div>
                             </Link>
                             <div className="text">
-                                <Link to={`/products/${i.id}`}>
+                                <Link to={`/category/products/${i.id}`}>
                                     <h4>{i.title}</h4>
                                 </Link>
                                 <span>{i.category}</span>

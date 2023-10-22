@@ -14,28 +14,28 @@ const Header = () => {
                 <h1><Link to={'/'}><img src="https://en.byemypie.kr/web/upload/category/editor/2022/07/22/f64163cbbedc6747890be7cb3c6cd18b.png" alt="logo" /></Link></h1>
                 <nav className='gnb'>
                     <ul>
-                        <li><Link to='/products' onClick={()=>dispatch(onMenufilter('case'))}>phone case</Link></li>
+                        <li><Link to='/category/Phone-case' onClick={()=>dispatch(onMenufilter('case'))}>phone case</Link></li>
                         <li>
-                            <Link to='/products' onClick={()=>dispatch(onMenufilter('tok'))} >finger tok</Link>
+                            <Link to='/category/finger-tok' onClick={()=>dispatch(onMenufilter('tok'))} >finger tok</Link>
                         </li>
                         <li>
-                            <Link to='/products' onClick={()=>dispatch(onMenufilter('airpods'))}>airpods case</Link>
+                            <Link to='/category/airpods-case' onClick={()=>dispatch(onMenufilter('airpods'))}>airpods case</Link>
                         </li>
                         <li>
-                            <Link to='/products' onClick={()=>dispatch(onMenufilter('keyring'))}>keyring</Link>
+                            <Link to='/category/keyring' onClick={()=>dispatch(onMenufilter('keyring'))}>keyring</Link>
                         </li>
                         <li>
-                            <Link to='/products' onClick={()=>dispatch(onMenufilter('etc'))}>etc</Link>
+                            <Link to='/category/etc' onClick={()=>dispatch(onMenufilter('etc'))}>etc</Link>
                         </li>
                     </ul>
                 </nav>
             </div>
             <ul className='rightMenu'>
                 <li>
-                    <Link to="/">LOGIN</Link>
+                    <Link to="/login">LOGIN</Link>
                 </li>
                 <li>
-                    <Link to="/">JOIN</Link>
+                    <Link to="/join">JOIN</Link>
                 </li>
                 <li>
                     <Link to="/">CART</Link>
