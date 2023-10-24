@@ -5,7 +5,7 @@ import { Outlet } from 'react-router-dom';
 
 const Layout = () => {
     return (
-        <div style={{width:'100%'}}>
+        <div style={{width:'100%', minWidth:'1920px'}}>
             <Header/>
             <Outlet/>
             <Footer/>

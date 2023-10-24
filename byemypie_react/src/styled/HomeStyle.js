@@ -66,10 +66,10 @@ width: 100%;
 export const FooterWrap = styled.header`
    .inner{
     height: 240px;
-        padding: 100px 0px 0px 14px;
-        display: flex;
-        font-size: 12px;
-        box-sizing: border-box;
+    padding: 100px 0px 0px 14px;
+    display: flex;
+    font-size: 12px;
+    box-sizing: border-box;
         div{
             &:nth-child(1){
                 margin-right: 90px;

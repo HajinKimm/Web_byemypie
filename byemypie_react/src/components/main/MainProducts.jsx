@@ -1,6 +1,6 @@
 // 상품 데이터
 //     {
-//     "id":0, "title":"", "price":0, "sale":0, "issue":"", "category":"",
+//     "id":0, "title":"", "price":0, "sale":0, "issue":"", "category":"","menuType":"","review": 0,
 //     "mainImg":"",
 //     "descImg":
 //         [""]

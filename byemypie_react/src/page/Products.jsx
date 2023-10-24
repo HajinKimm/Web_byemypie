@@ -1,13 +1,13 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { MainProductsWrap } from '../styled/HomeStyle';
 import { Link } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
-import { onSortProduct } from '../store/modules/ProductSlice';
+import { onMenufilter, onSortProduct } from '../store/modules/ProductSlice';
 
 const Products = () => {
 
-    const {menufilter, productTitle, sort} = useSelector(state=>state.productsR)
-    const dispatch = useDispatch()
+    const {menufilter, productTitle, sort } = useSelector(state => state.productsR);
+    const dispatch = useDispatch();
 
     return (
         <MainProductsWrap>

@@ -19,8 +19,8 @@ export const ProductSlice = createSlice({
   reducers: {
     onMenufilter:(state, action)=>{ //카테고리에 맞는 상품데이터 출력
         // console.log(action.payload)
-        state.menufilter = state.productList.filter(i=>i.menuType.includes(action.payload))
-        // console.log(state.menufilter)
+        state.menufilter = state.productList.filter(i=>i.menuType===action.payload)
+        console.log(state.menufilter)
         switch(action.payload){
             case 'case' : state.productTitle='phone case'; break;
             case 'tok' : state.productTitle='finger tok'; break;
@@ -41,10 +41,13 @@ export const ProductSlice = createSlice({
             case 'Product Review' : state.menufilter.sort((a,b)=>b.review-a.review);break;
             default : state.menufilter;
         }
+    },
+    onSortProductReset:(state)=>{
+        state.sort = state.sort.map(i=>({...i, isOn:false}))
     }
   }
 })
 
 
-export const { onMenufilter, onSortProduct } = ProductSlice.actions
+export const { onMenufilter, onSortProduct, onSortProductReset } = ProductSlice.actions
 export default ProductSlice.reducer
