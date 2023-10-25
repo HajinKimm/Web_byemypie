@@ -102,6 +102,7 @@ position: relative;
     padding-top: 515px;
     padding-left: 50px;
     span{
+        width: 10px;
         cursor: pointer;
         display: block;
         color: #bbb;
@@ -229,6 +230,36 @@ export const MainProductsWrap = styled.section`
                 img{
                     width: 525px;
                 }
+            }
+        }
+    }
+    .paging{
+        text-align: center;
+        padding-top: 75px;
+        i{
+            font-size: 12px;
+            vertical-align: bottom;
+            margin-right: 20px;
+            color: ${colorGray};
+            cursor: pointer;
+            &:last-child{
+                margin-right: 0;
+            }
+            &:hover{
+                color: ${colorNavy};
+            }
+        }
+        span{
+            font-size: 12px;
+            margin-right: 20px;
+            color: ${colorGray};
+            font-weight: 700;
+            cursor: pointer;
+            &.on{
+                color: ${colorNavy};
+            }
+            &:hover{
+                color: ${colorNavy};
             }
         }
     }

@@ -11,7 +11,8 @@ const initialState = {
         {id:2, title: '낮은가격', eTitle:'Lowest Price', isOn:false},
         {id:3, title: '높은가격', eTitle:'Highest Price', isOn:false},
         {id:4, title: '상품후기', eTitle:'Product Review', isOn:false}
-    ]
+    ],
+    pagingNumber:1
  } 
 export const ProductSlice = createSlice({
   name: 'products',
@@ -44,10 +45,14 @@ export const ProductSlice = createSlice({
     },
     onSortProductReset:(state)=>{
         state.sort = state.sort.map(i=>({...i, isOn:false}))
+    },
+    onCurrentPage:(state,action)=>{
+        console.log(action.payload)
+        state.pagingNumber = action.payload
     }
   }
 })
 
 
-export const { onMenufilter, onSortProduct, onSortProductReset } = ProductSlice.actions
+export const { onMenufilter, onSortProduct,onSortProductReset,onCurrentPage } = ProductSlice.actions
 export default ProductSlice.reducer
