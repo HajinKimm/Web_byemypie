@@ -57,12 +57,86 @@ width: 100%;
             }
         }
     }
-    /* .headerHeight{
-        width: 100%;
-        height: 170px;
-    } */
+.scrollBtn{
+    z-index: 50;
+    position: fixed;
+    bottom: 25px;
+    right: 20px;
+    button{
+        display: block;
+        width: 30px;
+        height: 30px;
+        border: 1px solid #999;
+        font-size: 30px;
+        color: #9a9a9a;
+        cursor: pointer;
+        text-indent: -7px;
+        background: #fff;
+        &.up{
+            margin-bottom: 10px;
+        }
+    }
+}
 `
+export const SearchPopupWrap = styled.div`
+    .bg{
+        z-index: 200;
+        position: fixed;
+        background: #ccc;
+        opacity: 0.5;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+    .box{
+        z-index: 200;
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        width: 650px;
+        height: 300px;
+        border-radius: 35px;
+        border: 1px solid ${colorNavy};
+        background: #fff;
+        text-align: center;
+        h2{
+            margin-top: 100px;
+            margin-bottom: 40px;
+            color: ${colorNavy};
+            font-size: 18px;
+            font-weight: 600;
+        }
+        form{
+            position: relative;
+            transform: translateX(180px);
+            width: 290px;
+            height: 33px;
+            input{
+                width: 290px;
+                height: 33px;
+                border: 1px solid ${colorNavy};
+                border-radius: 30px;
+                &:focus{
+                    outline: none;
+                }
+                text-indent: 10px;
+                color: ${colorNavy};
+            }
+            button{
+                color: ${colorNavy};
+                position: absolute;
+                top: 5px;
+                right: 0px;
+                background: transparent;
+                border: none;
+                font-size: 25px;
+            }
+        }
 
+    }
+`
 export const FooterWrap = styled.header`
    .inner{
     height: 240px;

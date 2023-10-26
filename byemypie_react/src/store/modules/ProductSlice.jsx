@@ -12,7 +12,7 @@ const initialState = {
         {id:3, title: '높은가격', eTitle:'Highest Price', isOn:false},
         {id:4, title: '상품후기', eTitle:'Product Review', isOn:false}
     ],
-    pagingNumber:1
+    pagingNumber:1 //상품페이지 페이징
  } 
 export const ProductSlice = createSlice({
   name: 'products',
@@ -21,7 +21,7 @@ export const ProductSlice = createSlice({
     onMenufilter:(state, action)=>{ //카테고리에 맞는 상품데이터 출력
         // console.log(action.payload)
         state.menufilter = state.productList.filter(i=>i.menuType===action.payload)
-        console.log(state.menufilter)
+        // console.log(state.menufilter)
         switch(action.payload){
             case 'case' : state.productTitle='phone case'; break;
             case 'tok' : state.productTitle='finger tok'; break;
@@ -47,12 +47,15 @@ export const ProductSlice = createSlice({
         state.sort = state.sort.map(i=>({...i, isOn:false}))
     },
     onCurrentPage:(state,action)=>{
-        console.log(action.payload)
+        // console.log(action.payload)
         state.pagingNumber = action.payload
+    },
+    onSearchData:(state, action)=>{
+        state.menufilter = state.productList.filter(i=>i.title.toLowerCase().includes(action.payload.toLowerCase()))
+        // console.log(state.menufilter)
     }
   }
 })
 
-
-export const { onMenufilter, onSortProduct,onSortProductReset,onCurrentPage } = ProductSlice.actions
+export const { onMenufilter, onSortProduct,onSortProductReset,onCurrentPage,onSearchData } = ProductSlice.actions
 export default ProductSlice.reducer

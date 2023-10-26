@@ -1,13 +1,12 @@
 import React from 'react';
-import { MainProductsWrap } from '../styled/HomeStyle';
-import { Link } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
-import { onCurrentPage, onSortProduct } from '../store/modules/ProductSlice';
+import { MainProductsWrap } from '../styled/HomeStyle';
 import {FaAnglesLeft, FaAngleLeft} from 'react-icons/fa6'
 import {FaAngleDoubleRight,FaAngleRight} from 'react-icons/fa'
+import { onCurrentPage, onSortProduct } from '../store/modules/ProductSlice';
+import { Link } from 'react-router-dom';
 
-const Products = () => {
-
+const SearchProduct = () => {
     const {menufilter, productTitle, sort, pagingNumber } = useSelector(state => state.productsR);
     const dispatch = useDispatch();
     //paging
@@ -76,4 +75,4 @@ const Products = () => {
     );
 };
 
-export default Products;
+export default SearchProduct;
