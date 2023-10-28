@@ -7,7 +7,6 @@ import Products from './page/Products';
 import ProductDetail from './page/ProductDetail';
 import Login from './page/Login';
 import Join from './page/Join';
-import SearchProduct from './page/SearchProduct';
 
 
 
@@ -21,10 +20,10 @@ const App = () => {
             <Route index element={<Home/>}/>
 
             <Route path='/category/Phone-case' element={<Products/>} />
-            <Route path='/category/finger-tok' element={<Products/>} />
-            <Route path='/category/airpods-case' element={<Products/>} />
-            <Route path='/category/keyring' element={<Products/>} />
-            <Route path='/category/etc' element={<Products/>} />
+            <Route path='/category/Finger-tok' element={<Products/>} />
+            <Route path='/category/Airpods-case' element={<Products/>} />
+            <Route path='/category/Keyring' element={<Products/>} />
+            <Route path='/category/Etc' element={<Products/>} />
             <Route path='/category/products/:productID' element={<ProductDetail/>}/>
 
             <Route path='/search/products' element={<Products/>}/>

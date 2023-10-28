@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { HeaderWrap } from '../../styled/HomeStyle';
+import { HeaderWrap } from '../styled/HomeStyle';
 import { useDispatch } from "react-redux";
-import { onCurrentPage, onMenufilter, onSortProductReset } from '../../store/modules/ProductSlice';
+import { onCurrentPage, onMenufilter, onSortProductReset } from '../store/modules/ProductSlice';
 import { AiOutlineArrowDown, AiOutlineArrowUp } from 'react-icons/ai'
 import SearchPopup from './SearchPopup';
 
@@ -35,10 +35,10 @@ const Header = () => {
                 <nav className='gnb'>
                     <ul>
                         <li><Link to='/category/Phone-case' onClick={() => menuOnClick('case')}>phone case</Link></li>
-                        <li><Link to='/category/finger-tok' onClick={() => menuOnClick('tok')} >finger tok</Link></li>
-                        <li><Link to='/category/airpods-case' onClick={() => menuOnClick('airpods')}>airpods case</Link></li>
-                        <li><Link to='/category/keyring' onClick={() => menuOnClick('keyring')}>keyring</Link></li>
-                        <li><Link to='/category/etc' onClick={() => menuOnClick('etc')}>etc</Link></li>
+                        <li><Link to='/category/Finger-tok' onClick={() => menuOnClick('tok')} >finger tok</Link></li>
+                        <li><Link to='/category/Airpods-case' onClick={() => menuOnClick('airpods')}>airpods case</Link></li>
+                        <li><Link to='/category/Keyring' onClick={() => menuOnClick('keyring')}>keyring</Link></li>
+                        <li><Link to='/category/Etc' onClick={() => menuOnClick('etc')}>etc</Link></li>
                     </ul>
                 </nav>
             </div>
@@ -48,7 +48,7 @@ const Header = () => {
                 <li><Link to="/">CART</Link></li>
                 <li><Link to="/">ORDER</Link></li>
                 <li><Link to="/">MY PAGE</Link></li>
-                <li><Link to="" onClick={()=>{setOnPopup(true)}}>SEARCH</Link></li>
+                <li onClick={()=>{setOnPopup(true)}}>SEARCH</li>
                 <li><Link to="/">KR / ENG</Link></li>
             </ul>
             <div className='scrollBtn'>

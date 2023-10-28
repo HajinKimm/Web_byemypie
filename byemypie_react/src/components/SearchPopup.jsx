@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import {BiSearch} from 'react-icons/bi'
-import { SearchPopupWrap } from '../../styled/HomeStyle';
+import { SearchPopupWrap } from '../styled/HomeStyle';
 import { useDispatch } from 'react-redux';
-import { onCurrentPage, onSearchData } from '../../store/modules/ProductSlice';
+import { onCurrentPage, onSearchData } from '../store/modules/ProductSlice';
 import { useNavigate } from 'react-router-dom';
 
 const SearchPopup = ({setOnPopup}) => {

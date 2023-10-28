@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
-import Visual from './../components/main/Visual';
-import MainProducts from '../components/main/MainProducts';
+import Visual from './../components/Visual';
+import MainProducts from '../components/MainProducts';
 import { useSelector } from 'react-redux';
 
 const Home = () => {

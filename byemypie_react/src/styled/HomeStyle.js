@@ -50,6 +50,10 @@ width: 100%;
         right: 20px;
         li{
             text-align: right;
+            color: ${colorNavy};
+            font-size: 12px;
+            font-weight: 500;
+            cursor: pointer;
             a{
                 color: ${colorNavy};
                 font-size: 12px;
@@ -269,7 +273,11 @@ export const MainProductsWrap = styled.section`
 
         }
     }
-    //not main page // products page
+    // not main page 
+    // products page
+    .none{
+        display: none;
+    }
     h2{
         margin-top: 200px;
         text-align: center;
@@ -277,6 +285,10 @@ export const MainProductsWrap = styled.section`
         font-size: 20px;
         font-weight: 600;
         letter-spacing: 1px;
+        b{
+            font-size: 16px;
+            color: #333;
+        }
     }
     .productsMenu{
         padding: 30px 145px 30px;

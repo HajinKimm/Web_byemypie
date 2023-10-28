@@ -7,8 +7,8 @@
 // }
 
 import React from 'react';
-import productList from '../../assets/api/products.json'
-import { MainProductsWrap } from '../../styled/HomeStyle';
+import productList from '../assets/api/products.json'
+import { MainProductsWrap } from '../styled/HomeStyle';
 import { Link } from 'react-router-dom';
 
 

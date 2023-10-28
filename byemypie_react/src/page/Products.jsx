@@ -1,6 +1,6 @@
 import React from 'react';
 import { MainProductsWrap } from '../styled/HomeStyle';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import { onCurrentPage, onSortProduct } from '../store/modules/ProductSlice';
 import {FaAnglesLeft, FaAngleLeft} from 'react-icons/fa6'
@@ -10,6 +10,8 @@ const Products = () => {
 
     const {menufilter, productTitle, sort, pagingNumber } = useSelector(state => state.productsR);
     const dispatch = useDispatch();
+    const location = useLocation()
+
     //paging
     const postPerPage = 9; //게시물수
     const pageAllNumber = Math.ceil(menufilter.length/postPerPage);//총페이지수
@@ -23,9 +25,38 @@ const Products = () => {
             top:0,
         })
     }
+
     return (
         <MainProductsWrap>
-            <h2>{productTitle}</h2>
+            <h2 className={location.pathname==='/search/products'?'none':''}>{productTitle}</h2>
+            <div className={location.pathname==='/search/products'?'searchBox':'none'}>
+                <h2>PRODUCT SEARCH</h2>
+                <div className="searchBox">
+                    <form action="">
+                        <p>
+                            <label htmlFor="">keyword</label>
+                            <input type="text" />
+                        </p>
+                        <p>
+                            <select name="" id="" title='category'>
+                                <option value="">상품옵션 선택</option>
+                                <option value=""></option>
+                                <option value=""></option>
+                            </select>
+                            <input type="price" />
+                            <label htmlFor="">no keyword</label>
+                            <input type="text" />
+                        </p>
+                        <p>
+                            <select name="" id="" title=''>
+                                <option value=""></option>
+                                <option value=""></option>
+                                <option value=""></option>
+                            </select>
+                        </p>
+                    </form>
+                </div>
+            </div>
             <div className='productsMenu'>
                 <span>등록제품 <b className='textBord'>{menufilter.length}</b>개</span>
                 <ul className='sortList'>

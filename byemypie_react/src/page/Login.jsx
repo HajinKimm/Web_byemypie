@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { LoginWrap } from '../styled/athorityStyle';
+import { LoginWrap } from '../styled/SideStyle';
 
 const Login = () => {
     const onSubmit=(e)=>{

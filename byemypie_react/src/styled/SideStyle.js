@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { colorNavy } from './HomeStyle'
+import { colorBlue, colorNavy } from './HomeStyle'
 
 export const LoginWrap = styled.div`
     .inner{
@@ -97,4 +97,69 @@ export const LoginWrap = styled.div`
             }
         }
     }   
+`
+
+export const JoinWrap = styled.div`
+    .inner{
+        width: 1630px;
+        margin: auto;
+        h2{
+            margin-top: 200px;
+            text-align: center;
+            font-weight: 600;
+            letter-spacing: 1px;
+            font-size: 16px;
+            color: #333;
+            margin-bottom: 30px;
+        }
+        form{
+            border-top: 1px solid #999;
+            padding-top: 10px;
+            .userWrite{
+                width: 100%;
+                .w1{width:150px;}
+                .w2{width:auto;}
+                tr{
+                    box-sizing: border-box;
+                    border-top: 1px solid #999;
+                    border-bottom: 1px solid #999;
+                    height: 40px;
+                    line-height: 40px;
+                    td{
+                        text-indent: 10px;
+                        font-size: 12px;
+                        &:first-child{
+                            border-right: 1px solid #999;
+                            text-indent: 20px;
+                        }
+                        b{
+                            /* display: inline-block; */
+                            padding-left: 5px;
+                            color: #37A3D7;
+                            font-size: 16px;
+                            font-weight: 700;
+                        }
+                        span{
+                            padding-left: 5px;
+                        }  
+                        .w150{
+                            width: 150px;
+                            height: 22px;
+                            border-radius: 6px;
+                            border: 1px solid #999;
+                            box-sizing: border-box;
+                        } 
+                        .w60{
+                            box-sizing: border-box;
+                            width: 60px;
+                            height: 22px;
+                            border-radius: 6px;
+                            border: 1px solid #999;
+                        }
+                    }
+                }
+            }
+
+        }
+    }
 `

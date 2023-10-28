@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import list from '../../assets/api/home_visual'
-import { VisualWrap } from '../../styled/HomeStyle';
+import list from '../assets/api/home_visual'
+import { VisualWrap } from '../styled/HomeStyle';
 
 
 const Visual = () => {
