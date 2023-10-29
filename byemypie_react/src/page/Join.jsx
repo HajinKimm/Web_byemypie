@@ -80,16 +80,26 @@ const Join = () => {
                         </colgroup>
                         <tbody>
                             <tr>
-                                <td>
+                                <td className='chkAll'>
                                     <input type="checkbox" name='termsAll' onChange={changeCheckboxTerms} checked={termsData.filter(i=>i.isChk===false).length < 1}/>
                                     <label htmlFor='termsAll'>이용약관 및 개인정보수집 및 이용, 쇼핑정보 수신(선택)에 모두 동의합니다.</label>
                                 </td>
                             </tr>
                             <tr>
-                                <td>
-                                    {/* <label>{termsData[0].title}</label> */}
-                                    {/* <p>{termsData[0].desc}</p> */}
-                                    {/* <input type="checkbox" name={termsData[0].category} checked={termsData[0].isChk} /> */}
+                                <td className='chk1'>
+                                    <label>{termsData[0].title}</label>
+                                    <p>{termsData[0].desc}</p>
+                                    <input type="checkbox" name={termsData[0].category} checked={termsData[0].isChk} />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td className='chk2'>
+
+                                </td>
+                            </tr>
+                            <tr>
+                                <td className='chk3'>
+
                                 </td>
                             </tr>
                         </tbody>

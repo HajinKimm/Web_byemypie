@@ -159,6 +159,49 @@ export const JoinWrap = styled.div`
                     }
                 }
             }
+            h4{
+                font-weight: 700;
+                font-size: 13px;
+                margin: 35px 0px 10px;
+            }
+            .agreement{
+                height: 830px;
+                tr{
+                    border: 1px solid #999;
+                    td{
+                        box-sizing: border-box;
+                        padding: 20px;
+                        height: 250px;
+                        p{
+                            border: 1px solid #999;
+                            width: 1590px;
+                            height: 150px;
+                            overflow: auto;
+                            padding: 20px;
+                            white-space: pre-line;
+                        }
+                        &input[checkbox]{
+                            padding-right: 10px;
+                        }
+                        &.chkAll{
+                            height: 60px;
+                            input{
+                                width: 22px;
+                                height: 22px;
+                            }
+                            label{
+                                font-weight: 700;
+                                font-size: 12px;
+                                vertical-align: 6px;
+                            }
+                        }
+                        &.chk1{}
+                        &.chk2{}
+                        &.chk3{}
+
+                    }
+                }
+            }
 
         }
     }
